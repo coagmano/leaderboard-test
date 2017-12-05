@@ -3,13 +3,16 @@ import { PlayersList } from '../imports/player-list';
 if (PlayersList.find({}).count() === 0) {
     [
         {
-            name: 'John'
+            _id: 'John',
+            name: 10
         },
         {
-            name: 'Bill'
+            _id: 'Bill',
+            name: 20
         },
         {
-            name: 'Sally'
+            _id: 'Sally',
+            name: 30
         }
     ].forEach(val => {
         PlayersList.insert(val);
